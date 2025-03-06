@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%title%></title>
+</head>
+<body>
+  <!-- Main Content -->
+  <div class="main-content">
+    <% if (profile) { %>
+      <h1><%= profile.name %></h1>
+      <% if (profile.interests) { %>
+        <p>Interests: <%= profile.interests.join(', ') %></p>
+      <% } %>
+      <% if (profile.picture) { %>
+        <img src="<%= profile.picture %>" alt="<%= profile.name %>">
+      <% } else { %>
+        <p>No picture available</p>
+      <% } %>
+    <% } else { %>
+      <p>Profile not found</p>
+    <% } %>
+  </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Other Profiles</h2>
+      <ul>
+        <% otherProfiles.forEach(profile => { %>
+          <li><a href="/profiles/<%= profile.id %>"><%= profile.name %></a></li>
+        <% }); %>
+      </ul>
+    </div>
+</body>
+</html>
+

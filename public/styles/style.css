@@ -1,0 +1,46 @@
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0; /* Reset default padding */
+  }
+  
+  .nav-links li {
+    margin: 0;
+    padding-left: 8px;
+  }
+  
+  .nav-links li:not(:last-child) {
+    border-right: 1px solid #333; /* Separator between items */
+    padding-right: 8px; /* Spacing between items */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .nav-links a:hover {
+    color: #ff0000; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  #profile-image {
+    max-width: 2000px; 
+    max-height: 500px;
+   
+    margin: 0 auto;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#sidebar {
+   display: flex;
+   justify-content: space-between;
+   }
+

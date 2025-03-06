@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Ayesha",
+      "interests": ["Henna", "Dancing", "Coding"],
+      "picture": "/images/ayesha.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Charlotte",
+      "interests": ["Photography", "Traveling", "Cooking"],
+      "picture": ""
+    },
+    {
+      "id": 3,
+      "name": "Everest",
+      "interests": ["Dancing, Eating, Sleeping"],
+      "picture": "/images/everest.jpg"
+    }
+]

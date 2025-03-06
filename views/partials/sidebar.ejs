@@ -1,0 +1,24 @@
+<!-- views/partials/sidebar.ejs -->
+<aside id="sidebar">
+    <nav>
+        <h3>Other Profiles</h3>
+        <ul>
+            <% pages.forEach(function(page) { %>
+                <% if(page.name.toLowerCase() !== currentProfile.toLowerCase()) { %>
+                    <li><a href="<%= page.path %>"><%= page.name %></a></li>
+                <% } %>
+            <% }); %>
+        </ul>
+    </nav>
+</aside>
+
+
+<!-- <aside id="sidebar">
+    <nav>
+        <ul>
+            <li><a href="/profiles/everest">Everest</a></li>
+            <li><a href="/profiles/charo">Charo</a></li>
+           
+        </ul>
+    </nav>
+</aside> -->
